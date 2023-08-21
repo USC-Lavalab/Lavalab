@@ -231,7 +231,7 @@ const HomePage = () => {
                                         Come celebrate the beginning of USC's newest startups!
                                     </p>
                                     <p className="detail" style={{ marginTop: "10px" }}>
-                                        April 25th 5pm-8pm, Tommy's Place
+                                        November 29, 5pm-8pm, Tommy's Place
                                     </p>
                                     {<a
                                         href="https://www.google.com/calendar/render?action=TEMPLATE&text=LavaLab+Demo+Night&details=Demo+Night+is+our+signature+event%2C+where+our+7+startup+teams+demo+their+products+and+pitch+them+to+our+panel+of+judges.&location=Tommy%27s+Place%0A3601+Trousdale+Pkwy%2C+Los+Angeles%2C+CA+90089&dates=20230426T000000Z%2F20230426T030000Z"
