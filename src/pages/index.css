@@ -1,0 +1,315 @@
+
+
+body {
+    font-family: 'NeurialGrotesk';
+}
+
+.col-half {
+    position: relative;
+    display: inline-block;
+    width: 49%;
+    background-color: white;
+}
+
+.col-half:first-child {
+    float: right;
+}
+
+.col-half:last-child {
+    float: left;
+}
+
+.tile {
+    position: relative;
+    height: 0px;
+    width: 100%;
+    background-size: cover;
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.tile-square {
+    padding-top: 100%;
+}
+
+.tile-full {
+    height: 100%;
+}
+
+.tile-content {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    top: 40px;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+}
+
+.tile-label {
+    margin-top: 15px;
+    font-family: 'NeurialGrotesk-Medium';
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.carousel {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    flex: 1 1 auto;
+}
+
+.carousel-item {
+    padding-right: 10%;
+    overflow: hidden;
+}
+
+.carousel-header {
+    font-family: 'Editor';
+    font-size: 54px;
+    line-height: 58px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.carousel-text {
+    font-family: 'NeurialGrotesk';
+    font-size: 24px;
+    line-height: 1.1;
+}
+
+.carousel-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    height: 100px;
+}
+
+.image-section {
+    position: relative;
+    height: 810px;
+    width: 100%;
+    background-color: grey;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-section-inner {
+    position: relative;
+    margin: 0 auto;
+    max-width: 900px;
+    height: 100%;
+}
+
+.content-section {
+    background-color: #f2f2f7;
+    padding: 40px 40px;
+}
+
+.content-section-dark {
+    background-color: #000000;
+}
+
+.content {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1350px;
+    padding-bottom: 2%;
+}
+
+.content-half {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 90%;
+    top: 500px;   
+}
+
+.hero-text {
+    font-family: 'Editor';
+    color: white;
+    font-size: 81px;
+    width: 500px;
+    margin: 20px 0;
+    line-height: 1.1;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+}
+
+.quote {
+    max-width: 1240px;
+    margin: 0 auto;
+    font-size: 54px;
+    color: white;
+    padding: 90px 95px;
+}
+
+.orange {
+    color: #ff5c39;
+}
+
+
+
+.btn {
+    font-family: 'NeurialGrotesk-Medium';
+    display: inline-flex;
+    padding: 10px 14px;
+    align-items: center;
+    /* justify-content: center; */
+    
+    border-radius: 2px;
+    background-color: #ff5c39;
+
+    color: white;
+    font-size: 16px; 
+}
+
+.btn img {
+    margin-left: 5px;
+    height: 18px;
+}
+
+.link {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 30px;
+
+    color: white;
+}
+
+.link img {
+    margin-left: 8px;
+    height: 18px;
+}
+
+.circle-icon {
+    margin-left: 10px;
+    border: 0.5px solid white;
+    border-radius: 100px;
+    padding: 6px;
+}
+
+.link.right-justify {
+    float: right;
+}
+
+.label {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 96px;
+    max-width: 400px;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+}
+
+.label-icon {
+    margin-left: 20px;
+    height: 20px;
+    border: 0.5px solid #ff5c39;
+    border-radius: 100px;
+    padding: 8px;
+}
+
+.label-content {
+    font-size: 16px;
+    line-height: 1.09;
+    margin-left: 20px;
+}
+
+.label-detail {
+    font-family: 'NeurialGrotesk';
+    color: #8e8e93;
+}
+
+.top-bar {
+    position: relative;
+    background-color: #e5e5ea;
+    height: 1px;
+}
+
+.employment-grid {
+    margin-top: 40px;
+}
+
+.employment-icon {
+    width: 25%;
+    margin-right: -3px;
+    display: inline-block;
+    text-align: center;
+    color: #8e8e93;
+    padding: 20px 0;
+}
+
+.employment-icon img {
+    width: 40px;
+    padding-bottom: 10px;
+}
+
+.employment-icon.see-more img {
+    width: 15px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 100px;
+    margin-bottom: 15px;
+}
+
+.exec-tile {
+    width: 25%;
+    display: inline-block;
+    margin-right: -3px;
+    margin-top: 30px;
+    vertical-align: top;
+}
+
+.exec-tile-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.exec-pic {
+    width: 100%;
+    background-color: grey;
+    margin-bottom: 30px;
+}
+
+.exec-icon {
+    display: inline-block;
+    width: 17px;
+    padding: 8px;
+    border: 1px solid #ff5c39;
+    border-radius: 100px;
+}
+
+.exec-info {
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.exec-name {
+    line-height: 17.5px;
+    font-family: 'NeurialGrotesk-Medium';
+}
+
+.exec-title {
+    color: #8e8e93;
+}

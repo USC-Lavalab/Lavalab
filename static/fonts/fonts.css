@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Editor';
+    src: url("Editor-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'NeurialGrotesk';
+    src: url("NeurialGrotesk-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'NeurialGrotesk-Medium';
+    src: url("NeurialGrotesk-Medium.otf") format("opentype");
+}
