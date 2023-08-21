@@ -30,7 +30,7 @@ import RightArrowIcon from "../../static/icon/Right-Arrow-Icon/Light.png"
 import DemoNightIcon from "../../static/icon/Events/Demo-Night-Icon/Highlight.png"
 
 import LavaLabLogo from "../../static/lavalab-logo.png"
-import LavaLearnLogoWhite from "../../static/lavalearn-logo-white.png"
+import LavaLearnLogoWhite from "../../static/lavalearn-white.png"
 import LavaLabLogoHighlight from "../../static/lavalab-logo-highlight.png"
 
 import PersonIcon from "../../static/icon/Person-Icon/Highlight.png"
@@ -630,7 +630,7 @@ const HomePage = () => {
                                     <img className="eboard-icon" src={CommunityIcon} alt="" />
                                     <div className="description-inner">
                                         <a href="https://www.linkedin.com/in/hilarifan/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
-                                            <p className="name">Hilary Fan</p>
+                                            <p className="name">Hilari Fan</p>
                                         </a>
                                         <p className="eboard-title">Director of External Community</p>
                                     </div>
