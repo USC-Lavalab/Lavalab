@@ -663,7 +663,7 @@ const HomePage = () => {
                             <div className="member">
                                 <img src={Jaden} className="profile-pic" alt="" />
                                 <div className="description">
-                                    <img className="eboard-icon" src={DevelopmentIcon} alt="" />
+                                    <img className="eboard-icon" src={DesignIcon} alt="" />
                                     <div className="description-inner">
                                         <a href="https://www.linkedin.com/in/jaden-young/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
                                             <p className="name">Jaden Young</p>
