@@ -200,7 +200,7 @@ const HomePage = () => {
                                 </h2>
 
                                 {<a
-                  href= "http://twitch.tv/usclavalab"//"https://docs.google.com/forms/d/e/1FAIpQLSfCaoqwBPYIiE6uw6ipmY8AWtyGrUWXJOmV4l_kexJrNDQ6Ew/viewform"
+                  href= "https://forms.gle/g7C28VveNT63bQXA7"
                   target="_blank"
                 >
                   <div
