@@ -3,3 +3,7 @@
     font-family: 'NeurialGrotesk';
     overflow: auto;
 }
+
+.profile-pic {
+    border-radius: 10px;
+}

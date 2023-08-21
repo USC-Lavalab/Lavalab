@@ -58,26 +58,26 @@ import UberIcon from "../../static/icon/Uber-Icon/Light.png"
 import MoreIcon from "../../static/icon/Add-Icon/Light.png"
 
 import PresidentIcon from "../../static/icon/President-Icon/Highlight.png"
-import CurriculumIcon from "../../static/icon/Curriculum-Icon/Highlight.png"
+import OperationsIcon from "../../static/icon/operations.svg"
 import RecruitmentIcon from "../../static/icon/Recruitment-Icon/Highlight.png"
+import IndustrySponsorshipsIcon from "../../static/icon/Industry-Relations-Icon/Highlight.png"
 import CommunityIcon from "../../static/icon/Community-Icon/Highlight.png"
-import IndustryRelationsIcon from "../../static/icon/Industry-Relations-Icon/Highlight.png"
-import FinanceIcon from "../../static/icon/Finance-Icon/Highlight.png"
+import MarketingIcon from "../../static/icon/marketing.png"
+import PMIcon from "../../static/icon/Curriculum-Icon/Highlight.png"
 import DesignIcon from "../../static/icon/Design-Icon/Highlight.png"
 import DevelopmentIcon from "../../static/icon/Development-Icon/Highlight.png"
-import MarketingIcon from "../../static/icon/marketing.png"
-import OperationsIcon from "../../static/icon/operations.svg"
+// import FinanceIcon from "../../static/icon/Finance-Icon/Highlight.png"
 
-import Joanna from "../../static/img/exec/joanna.jpg"
-import Mitchell from "../../static/img/exec/mitchell.jpg"
-import Phoebe from "../../static/img/exec/phoebe.jpg"
-import Tierra from "../../static/img/exec/tierra.jpg"
-import Nikhil from "../../static/img/exec/nikhil.png"
-import Maanya from "../../static/img/exec/maanya.jpg"
-import Colin from "../../static/img/exec/colin.jpg"
-import Haley from "../../static/img/exec/haley.jpg"
-import Anay from "../../static/img/exec/anay.jpg"
-import Scott from "../../static/img/exec/scott.jpg"
+import Maanya from '../../static/img/exec/maanya.png'
+import Chris from '../../static/img/exec/chris.png'
+import Kelcie from '../../static/img/exec/kelcie.png'
+import Reagan from '../../static/img/exec/reagan.png'
+import Sana from '../../static/img/exec/sana.png'
+import Hilari from '../../static/img/exec/hilari.png'
+import Allison from '../../static/img/exec/allison.png'
+import Anay from '../../static/img/exec/anay.png'
+import Jaden from '../../static/img/exec/jaden.png'
+import Scott from '../../static/img/exec/scott.png'
 
 import "./home.css"
 const HomePage = () => {
@@ -200,29 +200,29 @@ const HomePage = () => {
                                 </h2>
 
                                 {<a
-                  href= "https://forms.gle/g7C28VveNT63bQXA7"
-                  target="_blank"
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "flex-start",
+                                    href="https://forms.gle/g7C28VveNT63bQXA7"
+                                    target="_blank"
+                                >
+                                    <div
+                                        style={{
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "flex-start",
 
-                      backgroundColor: "black",
-                      borderRadius: "3px",
-                      padding: "12px 15px",
-                      left: "20px",
-                      right: "20px",
-                      bottom: "20px",
-                      width: "max-content",
-                      fontColor: "white",
-                    }}
-                  >
-                    <p style={{ fontColor: "white !important" }}>Apply Today!</p>{/*apply now*/ }
-                    <img src={RightArrowIcon} height={20} />
-                  </div>
-                </a>}
+                                            backgroundColor: "black",
+                                            borderRadius: "3px",
+                                            padding: "12px 15px",
+                                            left: "20px",
+                                            right: "20px",
+                                            bottom: "20px",
+                                            width: "max-content",
+                                            fontColor: "white",
+                                        }}
+                                    >
+                                        <p style={{ fontColor: "white !important" }}>Apply Today!</p>{/*apply now*/}
+                                        <img src={RightArrowIcon} height={20} />
+                                    </div>
+                                </a>}
                             </MastheadTextTile>
                             <div className="right">
                                 <div className="tile apply">
@@ -230,7 +230,7 @@ const HomePage = () => {
                                     <p className="detail">
                                         Come celebrate the beginning of USC's newest startups!
                                     </p>
-                                    <p className="detail" style={{marginTop:"10px"}}>
+                                    <p className="detail" style={{ marginTop: "10px" }}>
                                         April 25th 5pm-8pm, Tommy's Place
                                     </p>
                                     {<a
@@ -474,19 +474,19 @@ const HomePage = () => {
             <ContentContainer>
                 <TileRow id="alumni">
                     <ContentTile title="Alumni Project Spotlight">
-                        <Carousel titles={["CarbonLink", "Fleek","Kyoku"]}>
+                        <Carousel titles={["CarbonLink", "Fleek", "Kyoku"]}>
                             <CarouselSlide>
                                 <h1>CarbonLink</h1>
                                 <p>
-                                Access carbon markets.
-                                CarbonLink is the simple and secure platform to buy, sell, and manage carbon offsets on the blockchain.
+                                    Access carbon markets.
+                                    CarbonLink is the simple and secure platform to buy, sell, and manage carbon offsets on the blockchain.
                                 </p>
                                 <a href="https://www.carbonlink.io/">https://www.carbonlink.io/</a>
                             </CarouselSlide>
                             <CarouselSlide>
                                 <h1>Fleek</h1>
                                 <p>
-                                Your style, on Fleek. Explore curated items, search across top women's clothing brands, save favorites, organize Fleek boards, and purchase items.
+                                    Your style, on Fleek. Explore curated items, search across top women's clothing brands, save favorites, organize Fleek boards, and purchase items.
                                 </p>
                                 <a href="https://www.fleekfashion.app/">
                                     https://www.fleekfashion.app/
@@ -563,110 +563,86 @@ const HomePage = () => {
                         <p className="title">Executive Team</p>
                         <ExecutiveBoard>
                             <div className="member">
-                                <img src={Nikhil} className="profile-pic" alt="" />
+                                <img src={Maanya} className="profile-pic" alt="" />
                                 <div className="description">
                                     <img className="eboard-icon" src={PresidentIcon} alt="" />
                                     <div className="description-inner">
-                                        <a href="https://www.linkedin.com/in/patel-nikhil/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
-                                            <p className="name">Nikhil Patel</p>
+                                        <a href="https://www.linkedin.com/in/maanya-kashyap/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Maanya Kashyap</p>
                                         </a>
                                         <p className="eboard-title">President</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="member">
-                                <img src={Mitchell} className="profile-pic" alt="" />
+                                <img src={Chris} className="profile-pic" alt="" />
                                 <div className="description">
                                     <img className="eboard-icon" src={OperationsIcon} alt="" />
                                     <div className="description-inner">
-                                        <a href="https://www.linkedin.com/in/mitchell-morrison2024/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
-                                            <p className="name">Mitchell Morrison</p>
+                                        <a href="https://www.linkedin.com/in/capramana/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Christopher Pramana</p>
                                         </a>
                                         <p className="eboard-title">Director of Operations</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="member">
-                                <img src={Maanya} className="profile-pic" alt="" />
+                                <img src={Kelcie} className="profile-pic" alt="" />
                                 <div className="description">
                                     <img className="eboard-icon" src={RecruitmentIcon} alt="" />
                                     <div className="description-inner">
-                                        <a href="https://www.linkedin.com/in/maanya-kashyap/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
-                                            <p className="name">Maanya Kashyap</p>
+                                        <a href="https://www.linkedin.com/in/kelciefan/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Kelcie Fan</p>
                                         </a>
                                         <p className="eboard-title">Director of Recruitment</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="member">
-                                <img src={Joanna} className="profile-pic" alt="" />
+                                <img src={Reagan} className="profile-pic" alt="" />
                                 <div className="description">
-                                    <img className="eboard-icon" src={CommunityIcon} alt="" />
+                                    <img className="eboard-icon" src={IndustrySponsorshipsIcon} alt="" />
                                     <div className="description-inner">
-                                        <a href="https://www.linkedin.com/in/joannapark02/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
-                                            <p className="name">Joanna Park</p>
+                                        <a href="https://www.linkedin.com/in/reagan-meek/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Reagan Meek</p>
                                         </a>
-                                        <p className="eboard-title">Director of Community</p>
+                                        <p className="eboard-title">Director of Industry & Sponsorships</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="member">
-                                <img src={Scott} className="profile-pic" alt="" />
+                                <img src={Sana} className="profile-pic" alt="" />
                                 <div className="description">
-                                    <img className="eboard-icon" src={IndustryRelationsIcon} alt="" />
+                                    <img className="eboard-icon" src={CommunityIcon} alt="" />
                                     <div className="description-inner">
-                                        <a href="https://www.linkedin.com/in/susantoscott/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
-                                            <p className="name">Scott Susanto</p>
+                                        <a href="https://www.linkedin.com/in/sana-jayaswal-43a83b1b8/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Sana Jayaswal</p>
                                         </a>
                                         <p className="eboard-title">
-                                            Director of Industry Relations
+                                            Director of Internal Community
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div className="member">
-                                <img src={Tierra} className="profile-pic" alt="" />
+                                <img src={Hilari} className="profile-pic" alt="" />
                                 <div className="description">
-                                    <img className="eboard-icon" src={FinanceIcon} alt="" />
+                                    <img className="eboard-icon" src={CommunityIcon} alt="" />
                                     <div className="description-inner">
-                                        <a href="https://www.linkedin.com/in/tierrabuissereth/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
-                                            <p className="name">Tierra Buissereth</p>
+                                        <a href="https://www.linkedin.com/in/hilarifan/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Hilary Fan</p>
                                         </a>
-                                        <p className="eboard-title">Director of Sponsorship</p>
+                                        <p className="eboard-title">Director of External Community</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="member">
-                                <img src={Phoebe} className="profile-pic" alt="" />
-                                <div className="description">
-                                    <img className="eboard-icon" src={DesignIcon} alt="" />
-                                    <div className="description-inner">
-                                        <a href="https://www.linkedin.com/in/phoebeum/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
-                                            <p className="name">Phoebe Um</p>
-                                        </a>
-                                        <p className="eboard-title">Director of Design</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="member">
-                                <img src={Colin} className="profile-pic" alt="" />
-                                <div className="description">
-                                    <img className="eboard-icon" src={DevelopmentIcon} alt="" />
-                                    <div className="description-inner">
-                                        <a href="https://www.linkedin.com/in/colin-ho99/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
-                                            <p className="name">Colin Ho</p>
-                                        </a>
-                                        <p className="eboard-title">Director of Development</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="member">
-                                <img src={Haley} className="profile-pic" alt="" />
+                                <img src={Allison} className="profile-pic" alt="" />
                                 <div className="description">
                                     <img className="eboard-icon" src={MarketingIcon} alt="" />
                                     <div className="description-inner">
-                                        <a href="https://www.linkedin.com/in/hellohaleyho/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
-                                            <p className="name">Haley Ho</p>
+                                        <a href="https://www.linkedin.com/in/allisonnakajima/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Allison Nakajima</p>
                                         </a>
                                         <p className="eboard-title">Director of Marketing</p>
                                     </div>
@@ -675,12 +651,36 @@ const HomePage = () => {
                             <div className="member">
                                 <img src={Anay} className="profile-pic" alt="" />
                                 <div className="description">
-                                    <img className="eboard-icon" src={CurriculumIcon} alt="" />
+                                    <img className="eboard-icon" src={PMIcon} alt="" />
                                     <div className="description-inner">
                                         <a href="https://www.linkedin.com/in/anaykarwal/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
                                             <p className="name">Anay Karwal</p>
                                         </a>
-                                        <p className="eboard-title">Director of Alumni and External Community</p>
+                                        <p className="eboard-title">Director of Product Management</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={Jaden} className="profile-pic" alt="" />
+                                <div className="description">
+                                    <img className="eboard-icon" src={DevelopmentIcon} alt="" />
+                                    <div className="description-inner">
+                                        <a href="https://www.linkedin.com/in/jaden-young/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Jaden Young</p>
+                                        </a>
+                                        <p className="eboard-title">Director of Design</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={Scott} className="profile-pic" alt="" />
+                                <div className="description">
+                                    <img className="eboard-icon" src={DevelopmentIcon} alt="" />
+                                    <div className="description-inner">
+                                        <a href="https://www.linkedin.com/in/susantoscott/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Scott Susanto</p>
+                                        </a>
+                                        <p className="eboard-title">Director of Development</p>
                                     </div>
                                 </div>
                             </div>
