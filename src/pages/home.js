@@ -75,9 +75,10 @@ import Reagan from "../../static/img/exec/reagan.png";
 import Sana from "../../static/img/exec/sana.png";
 import Hilari from "../../static/img/exec/hilari.png";
 import Allison from "../../static/img/exec/allison.png";
-import Anay from "../../static/img/exec/anay.png";
 import Jaden from "../../static/img/exec/jaden.png";
-import Scott from "../../static/img/exec/scott.png";
+import Aditya from "../../static/img/exec/aditya.png";
+import Alex from "../../static/img/exec/alex.png";
+import Bryan from "../../static/img/exec/bryan.png";
 
 import "./home.css";
 const HomePage = () => {
@@ -769,7 +770,7 @@ const HomePage = () => {
               </div>
               <div className="member">
                 <img
-                  src={Sana}
+                  src={Alex}
                   className="profile-pic"
                   alt=""
                 />
@@ -781,15 +782,42 @@ const HomePage = () => {
                   />
                   <div className="description-inner">
                     <a
-                      href="https://www.linkedin.com/in/sana-jayaswal-43a83b1b8/"
+                      href="https://www.linkedin.com/in/forgosh/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="linkedInLinks"
                     >
-                      <p className="name">Sana Jayaswal</p>
+                      <p className="name">Alex Forgosh</p>
                     </a>
                     <p className="eboard-title">
-                      Director of Internal Community
+                      Co-Director of Internal Community
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="member">
+                <img
+                  src={Bryan}
+                  className="profile-pic"
+                  alt=""
+                />
+                <div className="description">
+                  <img
+                    className="eboard-icon"
+                    src={CommunityIcon}
+                    alt=""
+                  />
+                  <div className="description-inner">
+                    <a
+                      href="https://www.linkedin.com/in/bryan-phillips12/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="linkedInLinks"
+                    >
+                      <p className="name">Bryan Phillips</p>
+                    </a>
+                    <p className="eboard-title">
+                      Co-Director of Internal Community
                     </p>
                   </div>
                 </div>
@@ -848,7 +876,7 @@ const HomePage = () => {
               </div>
               <div className="member">
                 <img
-                  src={Anay}
+                  src={Sana}
                   className="profile-pic"
                   alt=""
                 />
@@ -860,12 +888,12 @@ const HomePage = () => {
                   />
                   <div className="description-inner">
                     <a
-                      href="https://www.linkedin.com/in/anaykarwal/"
+                      href="https://www.linkedin.com/in/sana-jayaswal-43a83b1b8/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="linkedInLinks"
                     >
-                      <p className="name">Anay Karwal</p>
+                      <p className="name">Sana Jayaswal</p>
                     </a>
                     <p className="eboard-title">
                       Director of Product Management
@@ -900,7 +928,7 @@ const HomePage = () => {
               </div>
               <div className="member">
                 <img
-                  src={Scott}
+                  src={Aditya}
                   className="profile-pic"
                   alt=""
                 />
@@ -912,12 +940,12 @@ const HomePage = () => {
                   />
                   <div className="description-inner">
                     <a
-                      href="https://www.linkedin.com/in/susantoscott/"
+                      href="https://www.linkedin.com/in/hariharan-aditya/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="linkedInLinks"
                     >
-                      <p className="name">Scott Susanto</p>
+                      <p className="name">Aditya Hariharan</p>
                     </a>
                     <p className="eboard-title">Director of Development</p>
                   </div>
