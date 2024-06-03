@@ -8,6 +8,7 @@ import { CarouselSlide, SinglePanel } from "@/components/carousel";
 import Employment from "@/components/employment";
 import Events from "@/components/events";
 import ExecBoard from "@/components/exec-board";
+import Header from "@/components/header";
 import ImageHero from "@/components/image-hero";
 import Masthead from "@/components/masthead";
 import Projects from "@/components/projects";
@@ -27,9 +28,7 @@ import PersonIcon from "../../static/icon/Person-Icon/Highlight.png";
 import Fall2018BeachBonfire from "../../static/img/Fall-2018-Beach-Bonfire.jpg";
 import TileDemoNight from "../../static/img/Fall-2019-Demo-Night.jpg";
 import HeroTop from "../../static/img/Fall-2019-Retreat.jpg";
-import LavaLabLogoHighlight from "../../static/lavalab-logo-highlight.png";
 import LavaLabLogo from "../../static/lavalab-logo.png";
-import LavaLearnLogoWhite from "../../static/lavalearn-white.png";
 import "./home.css";
 
 const HomePage = () => {
@@ -132,26 +131,6 @@ const HomePage = () => {
           </FreeTile>
         </TileRow>
       </ContentContainer>
-      <StyleHeader className="navbar">
-        <a href="/">
-          <Image src={LavaLabLogoHighlight} alt="" />
-        </a>
-        <div className="links">
-          <a href="#about">About</a>
-          <a href="#join">Join</a>
-          <a href="#events">Events</a>
-          <a href="#alumni">Alumni</a>
-          <a href="#footer">Contact</a>
-          <a
-            href="https://learn.usclavalab.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ backgroundColor: "black", padding: 10, borderRadius: 5 }}
-          >
-            <Image src={LavaLearnLogoWhite} alt="" />
-          </a>
-        </div>
-      </StyleHeader>
     </div>
   );
 };
