@@ -1,5 +1,7 @@
 "use client";
 
+import "@/lib/vendor/fonts/fonts.css";
+
 import "./main.css";
 import "./reset.css";
 
