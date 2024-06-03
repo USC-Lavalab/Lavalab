@@ -5,7 +5,6 @@ import styled from "styled-components";
 
 import LavaLabLogoHighlight from "../../static/lavalab-logo-highlight.png";
 import LavaLearnLogoWhite from "../../static/lavalearn-white.png";
-import "./header.css";
 
 export default function Header() {
   return (
@@ -36,7 +35,8 @@ const StyleHeader = styled.div`
   @media only screen and (max-width: 1115px) {
     display: none;
   }
-  position: absolute;
+  position: fixed;
+  z-index: 10;
   top: 0;
   background-color: white;
   right: 0;
