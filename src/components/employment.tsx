@@ -6,7 +6,7 @@ import employmentData from "@/data/employment";
 
 export default function Employment() {
   return (
-    <EmploymentTile>
+    <EmploymentTile theme={"dark"} title="Alumni Industry Employment">
       <EmploymentContent>
         {employmentData.map(item => (
           <div key={item.name} className="employment-item">
