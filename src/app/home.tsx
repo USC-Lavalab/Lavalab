@@ -13,6 +13,7 @@ import ImageHero from "@/components/image-hero";
 import Masthead from "@/components/masthead";
 import Projects from "@/components/projects";
 import Roles from "@/components/roles";
+import Testimonial from "@/components/testimonial";
 import {
   CommunityTile,
   ContentContainer,
@@ -24,7 +25,6 @@ import {
 } from "@/components/tile";
 
 import DemoNightIcon from "../../static/icon/Events/Demo-Night-Icon/Highlight.png";
-import PersonIcon from "../../static/icon/Person-Icon/Highlight.png";
 import Fall2018BeachBonfire from "../../static/img/Fall-2018-Beach-Bonfire.jpg";
 import TileDemoNight from "../../static/img/Fall-2019-Demo-Night.jpg";
 import HeroTop from "../../static/img/Fall-2019-Retreat.jpg";
@@ -34,6 +34,8 @@ import "./home.css";
 const HomePage = () => {
   return (
     <div className="page">
+      <Header />
+
       <ImageHero src={HeroTop}>
         <div className="hero-content">
           <Image src={LavaLabLogo} alt="LavaLabLogo" width={250} />
@@ -74,6 +76,7 @@ const HomePage = () => {
           </ImageTile>
           <Roles />
         </TileRow>
+
         <TileRow id={"events"}>
           <Events />
         </TileRow>
@@ -101,23 +104,8 @@ const HomePage = () => {
         </TileRow>
       </ContentContainer>
       <ImageHero className="quote">
-        <div className="quote-content">
-          <span>“</span>
-          <br />
-          Lavalab made my semester one of the most rewarding experiences as a student so far. Turning a vision into a
-          reality, finding lifelong friends and potential cofounders, and learning to hustle make this something I'd
-          recommend to everyone.
-          <div className="quote-profile">
-            <Image src={PersonIcon} alt="" />
-
-            <div className="quote-profile-details">
-              <p className="name">Shub Gaur</p>
-              <p className="detail">Product Manager · Spring 2020</p>
-            </div>
-          </div>
-        </div>
+        <Testimonial />
       </ImageHero>
-
       <ContentContainer>
         <TileRow id="alumni">
           <Projects />
@@ -139,38 +127,6 @@ const HeroDivider = styled.div`
   height: 1px;
   background-color: white;
   margin: 0 auto;
-`;
-
-const StyleHeader = styled.div`
-  @media only screen and (max-width: 1115px) {
-    display: none;
-  }
-  position: absolute;
-  top: 0;
-  background-color: white;
-  right: 0;
-  left: 0;
-  display: flex;
-  flex-direction: row;
-  padding: 10px 30px;
-
-  .links {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    a {
-      margin-left: 40px;
-    }
-  }
-  a:hover,
-  a:visited,
-  a:link,
-  a:active {
-    text-decoration: none;
-    color: black;
-  }
 `;
 
 export default HomePage;
