@@ -6,7 +6,7 @@ import rolesData from "@/data/roles";
 
 function Roles() {
   return (
-    <ContentTile title="Find Your Role" height={"100%"}>
+    <ContentTile title="Find Your Role">
       <Carousel titles={rolesData.map(role => role.title)}>
         {rolesData.map((role, index) => (
           <CarouselSlide key={index}>

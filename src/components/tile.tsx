@@ -1,8 +1,33 @@
-// Stuff for tiling
 import React from "react";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import styled from "styled-components";
+
+interface TileProps {
+  height?: number;
+  type?: "full" | "half";
+  theme?: "dark" | "light";
+  children?: React.ReactNode;
+}
+
+interface ImageTileProps extends TileProps {
+  src: StaticImageData;
+  alt?: string;
+}
+
+interface ContentTileProps extends TileProps {
+  title?: string;
+  className?: string;
+}
+
+interface CommunityTileProps extends ContentTileProps {}
+
+interface EventLabelProps {
+  icon: StaticImageData;
+  name: string;
+  location: string;
+  date: string;
+}
 
 const ContentContainer = styled.div`
   width: 95%;
@@ -29,7 +54,7 @@ const TileRow = styled.div`
   }
 `;
 
-const Tile = styled.div`
+const Tile = styled.div<TileProps>`
   position: relative;
   height: 512px;
   width: 512px;
@@ -76,14 +101,14 @@ const ImageTileBase = styled(Tile)`
   }
 `;
 
-const ImageTile = ({ src, ...props }) => (
+const ImageTile: React.FC<ImageTileProps> = ({ src, ...props }) => (
   <ImageTileBase {...props}>
-    <Image src={src} alt={""} layout="fill" objectFit="cover" objectPosition="center" />
+    <Image src={src} alt="" layout="fill" objectFit="cover" objectPosition="center" />
     {props.children}
   </ImageTileBase>
 );
 
-const StyledContentTile = styled(Tile)`
+const StyledContentTile = styled(Tile)<TileProps>`
   width: ${({ type }) => (type === "full" ? 1044 : 512)}px;
   background-color: ${({ theme }) => (theme === "dark" ? "black" : "white")};
   color: ${({ theme }) => (theme === "dark" ? "white" : "black")};
@@ -102,7 +127,7 @@ const StyledContentTile = styled(Tile)`
     bottom: 20px;
     left: 20px;
     right: 20px;
-    border-top: 1px solid ${({ theme }) => (theme === "dark" ? "#2c2c2e" : "#e5e5ea")};
+    border-top: 1px solid #2c2c2e;
   }
 
   .title {
@@ -114,98 +139,25 @@ const StyledContentTile = styled(Tile)`
     padding: 16px 0;
     font-size: 14px;
   }
-
-  .employment-content {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 70px;
-    width: 100%;
-
-    @media only screen and (max-width: 1115px) {
-      margin-top: 40px;
-    }
-
-    .employment-item {
-      flex: 1 0 21%;
-      text-align: center;
-      color: #8e8e93;
-      margin-bottom: 40px;
-      @media only screen and (max-width: 1115px) {
-        margin-bottom: 20px;
-      }
-
-      img {
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 10px;
-        height: 48px;
-      }
-
-      .more-icon {
-        height: 20px;
-        border: 1px solid white;
-        padding: 4px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        border-radius: 100px;
-      }
-    }
-  }
 `;
 
-const ContentTile = props => {
+const ContentTile: React.FC<ContentTileProps> = props => {
   return (
-    <StyledContentTile theme={props.theme} type={props.type} height={props.height}>
+    <StyledContentTile {...props}>
       <p className="title">{props.title}</p>
       <div className="content">{props.children}</div>
     </StyledContentTile>
   );
 };
 
-const StyledCommunityTile = styled(Tile)`
-  width: ${({ type }) => (type === "full" ? 1044 : 512)}px;
-  background-color: ${({ theme }) => (theme === "dark" ? "black" : "white")};
-  color: ${({ theme }) => (theme === "dark" ? "white" : "black")};
-  height: 450px;
+const StyledCommunityTile = styled(StyledContentTile)<CommunityTileProps>``;
 
-  @media only screen and (max-width: 1115px) {
-    margin: 10px auto;
-    width: 100%;
-    height: 450px;
-  }
-
-  @media only screen and (max-width: 605px) {
-    height: 550px;
-  }
-
-  .content {
-    position: absolute;
-    top: 20px;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    border-top: 1px solid ${({ theme }) => (theme === "dark" ? "#2c2c2e" : "#e5e5ea")};
-  }
-
-  .title {
-    position: absolute;
-    left: 20px;
-    top: 30px;
-    text-transform: uppercase;
-    font-family: "NeurialGrotesk-Medium";
-    padding: 16px 0;
-    font-size: 14px;
-  }
-`;
-
-const CommunityTile = props => {
-  return (
-    <StyledCommunityTile theme={props.theme} type={props.type} height={props.height}>
-      <p className="title">{props.title}</p>
-      <div className="content">{props.children}</div>
-    </StyledCommunityTile>
-  );
-};
+const CommunityTile: React.FC<CommunityTileProps> = props => (
+  <StyledCommunityTile {...props}>
+    <p className="title">{props.title}</p>
+    <div className="content">{props.children}</div>
+  </StyledCommunityTile>
+);
 
 const StyledEventLabel = styled.div`
   display: flex;
@@ -242,7 +194,7 @@ const StyledEventLabel = styled.div`
   }
 `;
 
-const EventLabel = props => {
+const EventLabel: React.FC<EventLabelProps> = props => {
   return (
     <StyledEventLabel>
       <Image src={props.icon} alt="" />

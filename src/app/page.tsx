@@ -1,6 +1,6 @@
 "use client";
 
-import Footer from "../components/footer.js";
+import Footer from "../components/footer";
 import SEO from "../components/seo";
 import HomePage from "./home";
 

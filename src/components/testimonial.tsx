@@ -6,13 +6,13 @@ import PersonIcon from "../../static/icon/Person-Icon/Highlight.png";
 
 function Testimonial() {
   return (
-    <div className="testimonial-content">
+    <div className="quote-content">
       <span>“</span>
       <br />
       {testimonialData.text}
-      <div className="testimonial-profile">
+      <div className="quote-profile">
         <Image src={PersonIcon} alt="" width={48} height={48} />
-        <div className="testimonial-profile-details">
+        <div className="quote-profile-details">
           <p className="name">{testimonialData.author.name}</p>
           <p className="detail">{testimonialData.author.detail}</p>
         </div>

@@ -48,7 +48,7 @@ const HomePage = () => {
       <ContentContainer>
         <TileRow id={"about"}>
           <About />
-          <ContentTile image={HeroTop} className="video" height={550}>
+          <ContentTile className="video" height={550}>
             <iframe
               src="https://player.vimeo.com/video/668728641?h=51f392d0c5"
               allow="autoplay; fullscreen; picture-in-picture"
@@ -71,7 +71,7 @@ const HomePage = () => {
         </TileRow>
 
         <TileRow>
-          <ImageTile src={TileDemoNight} height={"100%"}>
+          <ImageTile src={TileDemoNight}>
             <EventLabel icon={DemoNightIcon} name="Demo Night" location="Los Angeles, CA" date="Fall 2019" />
           </ImageTile>
           <Roles />
