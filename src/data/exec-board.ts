@@ -1,4 +1,3 @@
-// membersData.js
 import CommunityIcon from "../../static/icon/Community-Icon/Highlight.png";
 import PMIcon from "../../static/icon/Curriculum-Icon/Highlight.png";
 import DesignIcon from "../../static/icon/Design-Icon/Highlight.png";
