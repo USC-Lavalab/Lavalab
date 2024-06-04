@@ -3,26 +3,10 @@ import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
 
-import About from "@/components/about";
 import { CarouselSlide, SinglePanel } from "@/components/carousel";
-import Employment from "@/components/employment";
-import Events from "@/components/events";
-import ExecBoard from "@/components/exec-board";
 import Header from "@/components/header";
 import ImageHero from "@/components/image-hero";
-import Masthead from "@/components/masthead";
-import Projects from "@/components/projects";
-import Roles from "@/components/roles";
-import Testimonial from "@/components/testimonial";
-import {
-  CommunityTile,
-  ContentContainer,
-  ContentTile,
-  EventLabel,
-  FreeTile,
-  ImageTile,
-  TileRow,
-} from "@/components/tile";
+import { CommunityTile, ContentContainer, ContentTile, EventLabel, ImageTile, TileRow } from "@/components/tile";
 
 import DemoNightIcon from "../../static/icon/Events/Demo-Night-Icon/Highlight.png";
 import Fall2018BeachBonfire from "../../static/img/Fall-2018-Beach-Bonfire.jpg";
@@ -30,12 +14,19 @@ import TileDemoNight from "../../static/img/Fall-2019-Demo-Night.jpg";
 import HeroTop from "../../static/img/Fall-2019-Retreat.jpg";
 import LavaLabLogo from "../../static/lavalab-logo.png";
 import "./home.css";
+import About from "./sections/about";
+import Employment from "./sections/employment";
+import Events from "./sections/events";
+import ExecBoard from "./sections/exec-board";
+import Masthead from "./sections/masthead";
+import Projects from "./sections/projects";
+import Roles from "./sections/roles";
+import Testimonial from "./sections/testimonial";
 
 const HomePage = () => {
   return (
     <div className="page">
       <Header />
-
       <ImageHero src={HeroTop}>
         <div className="hero-content">
           <Image src={LavaLabLogo} alt="LavaLabLogo" width={250} />
@@ -44,7 +35,6 @@ const HomePage = () => {
           <div className="bottom-row"></div>
         </div>
       </ImageHero>
-
       <ContentContainer>
         <TileRow id={"about"}>
           <About />
@@ -65,18 +55,15 @@ const HomePage = () => {
             ></iframe>
           </ContentTile>
         </TileRow>
-
         <TileRow id={"join"}>
           <Masthead />
         </TileRow>
-
         <TileRow>
           <ImageTile src={TileDemoNight}>
             <EventLabel icon={DemoNightIcon} name="Demo Night" location="Los Angeles, CA" date="Fall 2019" />
           </ImageTile>
           <Roles />
         </TileRow>
-
         <TileRow id={"events"}>
           <Events />
         </TileRow>
@@ -112,11 +99,7 @@ const HomePage = () => {
           <Employment />
         </TileRow>
         <TileRow>
-          <FreeTile title="Executive Team">
-            <hr />
-            <p className="title">Executive Team</p>
-            <ExecBoard />
-          </FreeTile>
+          <ExecBoard />
         </TileRow>
       </ContentContainer>
     </div>

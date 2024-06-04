@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import testimonialData from "@/data/testimonial";
 
-import PersonIcon from "../../static/icon/Person-Icon/Highlight.png";
+import PersonIcon from "../../../static/icon/Person-Icon/Highlight.png";
 
 function Testimonial() {
   return (

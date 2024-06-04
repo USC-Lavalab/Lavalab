@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { Tile } from "@/components/tile";
 import mastheadData from "@/data/masthead";
 
-import RightArrowIcon from "../../static/icon/Right-Arrow-Icon/Light.png";
+import RightArrowIcon from "../../../static/icon/Right-Arrow-Icon/Light.png";
 
 export default function Masthead() {
   return (

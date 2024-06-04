@@ -3,28 +3,33 @@ import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
 
+import { FreeTile } from "@/components/tile";
 import execBoardData from "@/data/exec-board";
 
 export default function ExecBoard() {
   return (
-    <Container>
-      {execBoardData.map(member => (
-        <div className="member" key={member.name}>
-          <div className="profile-pic">
-            <Image src={member.imgSrc} fill={true} alt="" />
-          </div>
-          <div className="description">
-            <Image className="eboard-icon" src={member.roleIconSrc} alt="" />
-            <div className="description-inner">
-              <a href={member.linkedInUrl} target="_blank" rel="noopener noreferrer" className="linkedInLinks">
-                <p className="name">{member.name}</p>
-              </a>
-              <p className="eboard-title">{member.title}</p>
+    <FreeTile title="Executive Team">
+      <hr />
+      <p className="title">Executive Team</p>
+      <Container>
+        {execBoardData.map(member => (
+          <div className="member" key={member.name}>
+            <div className="profile-pic">
+              <Image src={member.imgSrc} fill={true} alt="" />
+            </div>
+            <div className="description">
+              <Image className="eboard-icon" src={member.roleIconSrc} alt="" />
+              <div className="description-inner">
+                <a href={member.linkedInUrl} target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                  <p className="name">{member.name}</p>
+                </a>
+                <p className="eboard-title">{member.title}</p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
-    </Container>
+        ))}
+      </Container>
+    </FreeTile>
   );
 }
 
