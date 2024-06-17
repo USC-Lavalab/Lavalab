@@ -154,7 +154,7 @@ const ImageHero = ({
   children: React.ReactNode;
 }) => (
   <Container className={className}>
-    {src && <Image src={src} alt={""} fill={true} style={{ objectFit: "cover" }} />}
+    {src && <Image src={src} alt={""} fill={true} style={{ objectFit: "cover" }} priority />}
     {children}
   </Container>
 );

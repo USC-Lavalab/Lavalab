@@ -1,5 +1,6 @@
 import React from "react";
 
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import styled from "styled-components";
 
@@ -14,14 +15,15 @@ import TileDemoNight from "../../static/img/Fall-2019-Demo-Night.jpg";
 import HeroTop from "../../static/img/Fall-2019-Retreat.jpg";
 import LavaLabLogo from "../../static/lavalab-logo.png";
 import "./home.css";
-import About from "./sections/about";
-import Employment from "./sections/employment";
-import Events from "./sections/events";
-import ExecBoard from "./sections/exec-board";
-import Masthead from "./sections/masthead";
-import Projects from "./sections/projects";
-import Roles from "./sections/roles";
-import Testimonial from "./sections/testimonial";
+
+const About = dynamic(() => import("./sections/about"));
+const Employment = dynamic(() => import("./sections/employment"));
+const Events = dynamic(() => import("./sections/events"));
+const ExecBoard = dynamic(() => import("./sections/exec-board"));
+const Masthead = dynamic(() => import("./sections/masthead"));
+const Projects = dynamic(() => import("./sections/projects"));
+const Roles = dynamic(() => import("./sections/roles"));
+const Testimonial = dynamic(() => import("./sections/testimonial"));
 
 const HomePage = () => {
   return (

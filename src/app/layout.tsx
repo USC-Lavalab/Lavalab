@@ -1,5 +1,6 @@
 "use client";
 
+import StyledComponentsRegistry from "@/lib/registry";
 import "@/lib/vendor/fonts/fonts.css";
 
 import "./main.css";
@@ -9,9 +10,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html>
       <body>
-        <div>
-          <main>{children}</main>
-        </div>
+        <StyledComponentsRegistry>
+          <div>
+            <main>{children}</main>
+          </div>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
