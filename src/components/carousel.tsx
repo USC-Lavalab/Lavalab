@@ -322,7 +322,7 @@ const TiledCarousel = ({ children, titles }: { children: any[]; titles: string[]
       </StyledCarousel>
       <IconGrid className="icon-grid">
         {children.map((slide, idx) => (
-          <IconGridTile className={currentSlide === idx ? "active" : ""} onClick={() => setCurrentSlide(idx)}>
+          <IconGridTile key={idx} className={currentSlide === idx ? "active" : ""} onClick={() => setCurrentSlide(idx)}>
             <div className="tile-inner">
               <Image src={slide?.props.icon} alt="" />
               <p>{titles[idx]}</p>

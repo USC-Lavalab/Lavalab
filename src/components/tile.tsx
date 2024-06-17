@@ -103,7 +103,7 @@ const ImageTileBase = styled(Tile)`
 
 const ImageTile: React.FC<ImageTileProps> = ({ src, ...props }) => (
   <ImageTileBase {...props}>
-    <Image src={src} alt="" layout="fill" objectFit="cover" objectPosition="center" />
+    <Image src={src} alt="" fill style={{ objectFit: "cover", objectPosition: "center" }} />
     {props.children}
   </ImageTileBase>
 );
