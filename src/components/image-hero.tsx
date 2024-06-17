@@ -1,9 +1,9 @@
 import Image, { StaticImageData } from "next/image";
 import styled from "styled-components";
 
-const Container = styled.div`
+const Container = styled.div<{ small?: boolean }>`
   position: relative;
-  height: 810px;
+  height: ${({ small }) => (small ? 600 : 800)}px;
   width: 100%;
   overflow: hidden;
 
@@ -15,8 +15,8 @@ const Container = styled.div`
     color: white;
     background-color: black;
     font-family: "Editor";
-    font-size: 52px;
-    line-height: 62px;
+    font-size: 46px;
+    line-height: 1.2;
     display: flex;
     align-items: center;
 
@@ -146,14 +146,16 @@ const Container = styled.div`
 // Using the ImageHero component
 const ImageHero = ({
   src,
+  small,
   className,
   children,
 }: {
   src?: StaticImageData;
+  small?: boolean;
   className?: string;
   children: React.ReactNode;
 }) => (
-  <Container className={className}>
+  <Container small={small} className={className}>
     {src && <Image src={src} alt={""} fill={true} style={{ objectFit: "cover" }} priority />}
     {children}
   </Container>

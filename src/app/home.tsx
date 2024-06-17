@@ -70,7 +70,7 @@ const HomePage = () => {
           <Events />
         </TileRow>
       </ContentContainer>
-      <ImageHero src={Fall2018BeachBonfire}>
+      <ImageHero src={Fall2018BeachBonfire} small>
         <div className="event-container">
           <EventLabel icon={DemoNightIcon} name="Retreat" location="Los Angeles, CA" date="Fall 2019" />
         </div>
@@ -92,7 +92,7 @@ const HomePage = () => {
           </CommunityTile>
         </TileRow>
       </ContentContainer>
-      <ImageHero className="quote">
+      <ImageHero small className="quote">
         <Testimonial />
       </ImageHero>
       <ContentContainer>
