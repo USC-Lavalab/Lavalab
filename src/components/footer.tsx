@@ -1,12 +1,15 @@
-import React from "react"
-import styled from "styled-components"
-import FacebookIcon from "../../static/icon/Facebook-Icon/Light.png"
-import InstagramIcon from "../../static/icon/Instagram-Icon/Light.png"
-import TwitterIcon from "../../static/icon/Twitter-Icon/Light.png"
-import LavaLabLogo from "../../static/lavalab-logo.png"
-import LavaLearnLogo from "../../static/lavalearn-logo.png"
-import GriefCenterLogo from "../../static/img/greif-logo.png"
-import NeudesicLogo from "../../static/img/Neudesic-White-Logo.png"
+import React from "react";
+
+import Image from "next/image";
+import styled from "styled-components";
+
+import FacebookIcon from "../../static/icon/Facebook-Icon/Light.png";
+import InstagramIcon from "../../static/icon/Instagram-Icon/Light.png";
+import TwitterIcon from "../../static/icon/Twitter-Icon/Light.png";
+import NeudesicLogo from "../../static/img/Neudesic-White-Logo.png";
+import GriefCenterLogo from "../../static/img/greif-logo.png";
+import LavaLabLogo from "../../static/lavalab-logo.png";
+import LavaLearnLogo from "../../static/lavalearn-logo.png";
 
 let StyledFooter = styled.div`
   background-color: black;
@@ -54,11 +57,12 @@ let StyledFooter = styled.div`
     padding-top: 20px;
     width: 100%;
   }
+
   img.lava {
-    height: 60px;
     margin-right: auto;
     margin-left: 30px;
   }
+
   .top {
     display: flex;
     @media only screen and (max-width: 600px) {
@@ -90,53 +94,39 @@ let StyledFooter = styled.div`
       justify-content: space-around;
     }
   }
-`
+`;
 
 const Footer = () => (
   <StyledFooter id="footer">
     <div className="top">
-      <img className="lava" src={LavaLabLogo} alt=""/>
+      <Image className="lava" src={LavaLabLogo} alt="" height={60} />
       <div className="icons">
         <a href="https://www.facebook.com/usclavalab">
-          <img className="social-icon" src={FacebookIcon} alt=""/>
+          <Image className="social-icon" src={FacebookIcon} alt="" />
         </a>
         <a href="https://www.instagram.com/usclavalab/?hl=en">
-          <img className="social-icon" src={InstagramIcon}alt="" />
+          <Image className="social-icon" src={InstagramIcon} alt="" />
         </a>
         <a href="https://twitter.com/usclavalab">
-          <img className="social-icon" src={TwitterIcon} alt=""/>
+          <Image className="social-icon" src={TwitterIcon} alt="" />
         </a>
       </div>
 
-      <a
-        className="lava-link"
-        href="https://learn.usclavalab.org/"
-        target="_blank" rel="noopener noreferrer"
-      >
+      <a className="lava-link" href="https://learn.usclavalab.org/" target="_blank" rel="noopener noreferrer">
         <div className="lavalearn">
-          <img src={LavaLearnLogo} height={30} alt=""/>
+          <Image src={LavaLearnLogo} height={30} alt="" />
         </div>
       </a>
     </div>
     <div className="sponsors">
-      <p style={{ width: "100%", fontSize: 20, paddingBottom: 12 }}>
-        Our sponsors:
-      </p>
-      <img
-        src={NeudesicLogo}
-        height={30}
-        style={{ paddingBottom: 10, paddingLeft: 20, paddingRight: 20 }} alt=""
-      />
-      <img
-        src={GriefCenterLogo}
-        height={60}
-        style={{ paddingLeft: 20, paddingRight: 20 }} alt=""
-      />
+      <p style={{ width: "100%", fontSize: 20, paddingBottom: 12 }}>Our sponsors:</p>
+      <Image src={NeudesicLogo} height={30} style={{ paddingBottom: 10, paddingLeft: 20, paddingRight: 20 }} alt="" />
+      <Image src={GriefCenterLogo} height={60} style={{ paddingLeft: 20, paddingRight: 20 }} alt="" />
     </div>
     <div className="copyright">
       <p>LavaLab 2021. All Rights Reserved.</p>
     </div>
   </StyledFooter>
-)
+);
 
-export default Footer
+export default Footer;
