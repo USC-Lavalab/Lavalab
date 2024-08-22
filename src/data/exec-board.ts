@@ -7,94 +7,94 @@ import MarketingIcon from "../../static/icon/Marketing-Icon/marketing.png";
 import OperationsIcon from "../../static/icon/Operations-Icon/operations.png";
 import PresidentIcon from "../../static/icon/President-Icon/Highlight.png";
 import RecruitmentIcon from "../../static/icon/Recruitment-Icon/Highlight.png";
-import Aditya from "../../static/img/exec/aditya.png";
-import Alex from "../../static/img/exec/alex.png";
-import Allison from "../../static/img/exec/allison.png";
-import Bryan from "../../static/img/exec/bryan.png";
-import Chris from "../../static/img/exec/chris.png";
-import Hilari from "../../static/img/exec/hilari.png";
-import Jaden from "../../static/img/exec/jaden.png";
-import Kelcie from "../../static/img/exec/kelcie.png";
-import Maanya from "../../static/img/exec/maanya.png";
-import Reagan from "../../static/img/exec/reagan.png";
-import Sana from "../../static/img/exec/sana.png";
+import Aditya from "../../static/img/exec/aditya.jpg";
+import Alex from "../../static/img/exec/alex.jpg";
+import Bryan from "../../static/img/exec/bryan.jpg";
+import Cody from "../../static/img/exec/cody.jpg";
+import Cole from "../../static/img/exec/cole.jpg";
+import Iris from "../../static/img/exec/iris.jpg";
+import Jacqueline from "../../static/img/exec/jacqueline.jpg";
+import Josheta from "../../static/img/exec/josheta.jpg";
+import Riya from "../../static/img/exec/riya.jpg";
+import Zhamaika from "../../static/img/exec/zhamaika.jpg";
+import Zuhair from "../../static/img/exec/zuhair.jpg";
 
 const execBoardData = [
   {
-    name: "Maanya Kashyap",
+    name: "Aditya Hariharan",
     title: "President",
-    imgSrc: Maanya,
-    linkedInUrl: "https://www.linkedin.com/in/maanya-kashyap/",
+    imgSrc: Aditya,
+    linkedInUrl: "https://www.linkedin.com/in/hariharan-aditya",
     roleIconSrc: PresidentIcon,
   },
   {
-    name: "Christopher Pramana",
-    title: "Director of Operations",
-    imgSrc: Chris,
-    linkedInUrl: "https://www.linkedin.com/in/capramana/",
-    roleIconSrc: OperationsIcon,
-  },
-  {
-    name: "Kelcie Fan",
+    name: "Bryan Phillips",
     title: "Director of Recruitment",
-    imgSrc: Kelcie,
-    linkedInUrl: "https://www.linkedin.com/in/kelciefan/",
+    imgSrc: Bryan,
+    linkedInUrl: "https://www.linkedin.com/in/bryan-phillips12/",
     roleIconSrc: RecruitmentIcon,
   },
   {
-    name: "Reagan Meek",
+    name: "Zuhair Lakhani",
+    title: "Director of Operations",
+    imgSrc: Zuhair,
+    linkedInUrl: "https://www.linkedin.com/in/zuhair-lakhani",
+    roleIconSrc: OperationsIcon,
+  },
+  {
+    name: "Zhamaika Mussaibekova",
     title: "Director of Industry & Sponsorships",
-    imgSrc: Reagan,
-    linkedInUrl: "https://www.linkedin.com/in/reagan-meek/",
+    imgSrc: Zhamaika,
+    linkedInUrl: "https://www.linkedin.com/in/zhamilyamussaibekova",
     roleIconSrc: IndustrySponsorshipsIcon,
   },
   {
-    name: "Alex Forgosh",
+    name: "Josheta Srinivasan",
     title: "Co-Director of Internal Community",
-    imgSrc: Alex,
-    linkedInUrl: "https://www.linkedin.com/in/forgosh/",
+    imgSrc: Josheta,
+    linkedInUrl: "https://www.linkedin.com/in/joshetasrinivasan",
     roleIconSrc: CommunityIcon,
   },
   {
-    name: "Bryan Phillips",
+    name: "Cody Chen",
     title: "Co-Director of Internal Community",
-    imgSrc: Bryan,
-    linkedInUrl: "https://www.linkedin.com/in/bryan-phillips12/",
+    imgSrc: Cody,
+    linkedInUrl: "https://www.linkedin.com/in/codyachen",
     roleIconSrc: CommunityIcon,
   },
   {
-    name: "Hilari Fan",
+    name: "Riya Shenoy",
     title: "Director of External Community",
-    imgSrc: Hilari,
-    linkedInUrl: "https://www.linkedin.com/in/hilarifan/",
+    imgSrc: Riya,
+    linkedInUrl: "https://www.linkedin.com/in/riyashenoy",
     roleIconSrc: CommunityIcon,
   },
   {
-    name: "Allison Nakajima",
+    name: "Jacqueline Guo",
     title: "Director of Marketing",
-    imgSrc: Allison,
-    linkedInUrl: "https://www.linkedin.com/in/allisonnakajima/",
+    imgSrc: Jacqueline,
+    linkedInUrl: "https://www.linkedin.com/in/jacquelineguo7",
     roleIconSrc: MarketingIcon,
   },
   {
-    name: "Sana Jayaswal",
+    name: "Alex Forgosh",
     title: "Director of Product Management",
-    imgSrc: Sana,
-    linkedInUrl: "https://www.linkedin.com/in/sana-jayaswal-43a83b1b8/",
+    imgSrc: Alex,
+    linkedInUrl: "https://www.linkedin.com/in/forgosh/",
     roleIconSrc: PMIcon,
   },
   {
-    name: "Jaden Young",
+    name: "Iris Leung",
     title: "Director of Design",
-    imgSrc: Jaden,
-    linkedInUrl: "https://www.linkedin.com/in/jaden-young/",
+    imgSrc: Iris,
+    linkedInUrl: "https://www.linkedin.com/in/iris-c-leung",
     roleIconSrc: DesignIcon,
   },
   {
-    name: "Aditya Hariharan",
+    name: "Cole Gawin",
     title: "Director of Development",
-    imgSrc: Aditya,
-    linkedInUrl: "https://www.linkedin.com/in/hariharan-aditya/",
+    imgSrc: Cole,
+    linkedInUrl: "https://www.linkedin.com/in/colegawin",
     roleIconSrc: DevelopmentIcon,
   },
 ];

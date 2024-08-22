@@ -31,7 +31,7 @@ const HomePage = () => {
       <Header />
       <ImageHero src={HeroTop}>
         <div className="hero-content">
-          <Image src={LavaLabLogo} alt="LavaLabLogo" width={250} />
+          <Image src={LavaLabLogo} alt="LavaLabLogo" width={250} priority />
           <HeroDivider></HeroDivider>
           <h1 className="hero-header">Find Your Cofounders</h1>
           <div className="bottom-row"></div>

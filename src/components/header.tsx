@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <StyleHeader>
       <a href="/">
-        <Image src={LavaLabLogoHighlight} alt="" />
+        <Image src={LavaLabLogoHighlight} alt="" priority />
       </a>
       <div className="links">
         <a href="#about">About</a>
