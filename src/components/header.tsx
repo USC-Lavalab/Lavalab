@@ -4,7 +4,6 @@ import Image from "next/image";
 import styled from "styled-components";
 
 import LavaLabLogoHighlight from "../../static/lavalab-logo-highlight.png";
-import LavaLearnLogoWhite from "../../static/lavalearn-white.png";
 
 export default function Header() {
   return (
@@ -18,14 +17,6 @@ export default function Header() {
         <a href="#events">Events</a>
         <a href="#alumni">Alumni</a>
         <a href="#footer">Contact</a>
-        <a
-          href="https://learn.usclavalab.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ backgroundColor: "black", padding: 10, borderRadius: 5 }}
-        >
-          <Image src={LavaLearnLogoWhite} alt="" />
-        </a>
       </div>
     </StyleHeader>
   );

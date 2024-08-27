@@ -9,7 +9,6 @@ import TwitterIcon from "../../static/icon/Twitter-Icon/Light.png";
 import NeudesicLogo from "../../static/img/Neudesic-White-Logo.png";
 import GriefCenterLogo from "../../static/img/greif-logo.png";
 import LavaLabLogo from "../../static/lavalab-logo.png";
-import LavaLearnLogo from "../../static/lavalearn-logo.png";
 
 let StyledFooter = styled.div`
   background-color: black;
@@ -111,12 +110,6 @@ const Footer = () => (
           <Image className="social-icon" src={TwitterIcon} alt="" />
         </a>
       </div>
-
-      <a className="lava-link" href="https://learn.usclavalab.org/" target="_blank" rel="noopener noreferrer">
-        <div className="lavalearn">
-          <Image src={LavaLearnLogo} height={30} alt="" />
-        </div>
-      </a>
     </div>
     <div className="sponsors">
       <p style={{ width: "100%", fontSize: 20, paddingBottom: 12 }}>Our sponsors:</p>

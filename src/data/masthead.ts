@@ -3,9 +3,8 @@ const mastheadData = {
   type: "full",
   height: "350",
   mainContent: {
-    title: "Our Spring 2024 Applications are live",
-    actionUrl:
-      "https://docs.google.com/forms/d/e/1FAIpQLSfTB-BtXLbAE_wAL79omWcBLKisd0FcTFCbt8ALGjydMkVY0g/viewform?usp=sf_link",
+    title: "Our Fall 2024 Applications are live",
+    actionUrl: "https://forms.gle/B2e1sozeaQV5bhBt7",
     actionText: "Apply Today!",
   },
   additionalContents: [
