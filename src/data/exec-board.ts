@@ -29,7 +29,7 @@ const execBoardData = [
   },
   {
     name: "Bryan Phillips",
-    title: "Director of Recruitment",
+    title: "Vice President",
     imgSrc: Bryan,
     linkedInUrl: "https://www.linkedin.com/in/bryan-phillips12/",
     roleIconSrc: RecruitmentIcon,
@@ -40,13 +40,6 @@ const execBoardData = [
     imgSrc: Zuhair,
     linkedInUrl: "https://www.linkedin.com/in/zuhair-lakhani",
     roleIconSrc: OperationsIcon,
-  },
-  {
-    name: "Zhamaika Mussaibekova",
-    title: "Director of Industry & Sponsorships",
-    imgSrc: Zhamaika,
-    linkedInUrl: "https://www.linkedin.com/in/zhamilyamussaibekova",
-    roleIconSrc: IndustrySponsorshipsIcon,
   },
   {
     name: "Josheta Srinivasan",
