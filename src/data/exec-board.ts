@@ -7,80 +7,45 @@ import MarketingIcon from "../../static/icon/Marketing-Icon/marketing.png";
 import OperationsIcon from "../../static/icon/Operations-Icon/operations.png";
 import PresidentIcon from "../../static/icon/President-Icon/Highlight.png";
 import RecruitmentIcon from "../../static/icon/Recruitment-Icon/Highlight.png";
-import Aditya from "../../static/img/exec/aditya.jpg";
 import Advik from "../../static/img/exec/advik.jpg";
 import Alex from "../../static/img/exec/alex.jpg";
-import Bryan from "../../static/img/exec/bryan.jpg";
 import Cody from "../../static/img/exec/cody.jpg";
 import Cole from "../../static/img/exec/cole.jpg";
 import Iris from "../../static/img/exec/iris.jpg";
-import Jacqueline from "../../static/img/exec/jacqueline.jpg";
+import Jerry from "../../static/img/exec/jerry.jpg";
 import Josheta from "../../static/img/exec/josheta.jpg";
+import Mantej from "../../static/img/exec/mantej.jpg";
+import Mohamed from "../../static/img/exec/mohamed.jpg";
 import Riya from "../../static/img/exec/riya.jpg";
-import Zuhair from "../../static/img/exec/zuhair.jpg";
+import Uyen from "../../static/img/exec/uyen.jpg";
 
 const execBoardData = [
   {
-    name: "Aditya Hariharan",
+    name: "Josheta Srinivasan",
     title: "President",
-    imgSrc: Aditya,
-    linkedInUrl: "https://www.linkedin.com/in/hariharan-aditya",
+    imgSrc: Josheta,
+    linkedInUrl: "https://www.linkedin.com/in/joshetasrinivasan",
     roleIconSrc: PresidentIcon,
   },
   {
-    name: "Bryan Phillips",
+    name: "Cody Chen",
     title: "Vice President",
-    imgSrc: Bryan,
-    linkedInUrl: "https://www.linkedin.com/in/bryan-phillips12/",
+    imgSrc: Cody,
+    linkedInUrl: "https://www.linkedin.com/in/codyachen",
     roleIconSrc: RecruitmentIcon,
   },
   {
-    name: "Advik Unni",
-    title: "Director of Industry & Sponsorships",
-    imgSrc: Advik,
-    linkedInUrl: "https://www.linkedin.com/in/zhamilyamussaibekova",
-    roleIconSrc: IndustrySponsorshipsIcon,
-  },
-  {
-    name: "Zuhair Lakhani",
+    name: "Alex Forgosh",
     title: "Director of Operations",
-    imgSrc: Zuhair,
-    linkedInUrl: "https://www.linkedin.com/in/zuhair-lakhani",
+    imgSrc: Alex,
+    linkedInUrl: "https://www.linkedin.com/in/forgosh/",
     roleIconSrc: OperationsIcon,
   },
   {
-    name: "Josheta Srinivasan",
-    title: "Co-Director of Internal Community",
-    imgSrc: Josheta,
-    linkedInUrl: "https://www.linkedin.com/in/joshetasrinivasan",
-    roleIconSrc: CommunityIcon,
-  },
-  {
-    name: "Cody Chen",
-    title: "Co-Director of Internal Community",
-    imgSrc: Cody,
-    linkedInUrl: "https://www.linkedin.com/in/codyachen",
-    roleIconSrc: CommunityIcon,
-  },
-  {
-    name: "Riya Shenoy",
-    title: "Director of External Community",
-    imgSrc: Riya,
-    linkedInUrl: "https://www.linkedin.com/in/riyashenoy",
-    roleIconSrc: CommunityIcon,
-  },
-  {
-    name: "Jacqueline Guo",
-    title: "Director of Marketing",
-    imgSrc: Jacqueline,
-    linkedInUrl: "https://www.linkedin.com/in/jacquelineguo7",
-    roleIconSrc: MarketingIcon,
-  },
-  {
-    name: "Alex Forgosh",
+    name: "Advik Unni",
     title: "Director of Product Management",
-    imgSrc: Alex,
-    linkedInUrl: "https://www.linkedin.com/in/forgosh/",
+    imgSrc: Advik,
+    linkedInUrl: "https://www.linkedin.com/in/advik-unni/",
     roleIconSrc: PMIcon,
   },
   {
@@ -96,6 +61,41 @@ const execBoardData = [
     imgSrc: Cole,
     linkedInUrl: "https://www.linkedin.com/in/colegawin",
     roleIconSrc: DevelopmentIcon,
+  },
+  {
+    name: "Mohamed Ahmed",
+    title: "Director of Industry & Sponsorships",
+    imgSrc: Mohamed,
+    linkedInUrl: "https://www.linkedin.com/in/link3dinaccount/",
+    roleIconSrc: IndustrySponsorshipsIcon,
+  },
+  {
+    name: "Jerry Zhang",
+    title: "Co-Director of Internal Community",
+    imgSrc: Jerry,
+    linkedInUrl: "https://www.linkedin.com/in/jerry-n-zhang/",
+    roleIconSrc: CommunityIcon,
+  },
+  {
+    name: "Mantej Lamba",
+    title: "Co-Director of Internal Community",
+    imgSrc: Mantej,
+    linkedInUrl: "https://www.linkedin.com/in/mantejlamba/",
+    roleIconSrc: CommunityIcon,
+  },
+  {
+    name: "Riya Shenoy",
+    title: "Director of External Community",
+    imgSrc: Riya,
+    linkedInUrl: "https://www.linkedin.com/in/riyashenoy",
+    roleIconSrc: CommunityIcon,
+  },
+  {
+    name: "Uyen Hoang",
+    title: "Director of Marketing",
+    imgSrc: Uyen,
+    linkedInUrl: "https://www.linkedin.com/in/nhatuyenhoang/",
+    roleIconSrc: MarketingIcon,
   },
 ];
 
